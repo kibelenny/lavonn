@@ -7,7 +7,7 @@ import {
 </script>
 
 <template>
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-4">
         <div class="flex justify-between">
             <div>
                 <router-link to="/" class="flex h-full align-middle">
@@ -20,7 +20,7 @@ import {
                     type="text"
                     name="search"
                     id="search"
-                    class="w-2/3 rounded-l-3xl border-2 border-green-shade-01 bg-white px-4 py-2 2xl:text-lg"
+                    class="text-text-gray w-2/3 rounded-l-3xl border-2 border-green-shade-01 bg-white px-4 py-2 focus:border-green-shade-01/50 focus:outline-none 2xl:text-lg"
                     placeholder="Search"
                 />
                 <button
