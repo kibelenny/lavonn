@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         extend: {
             colors: {
@@ -11,6 +11,7 @@ export default {
                 'banner-red': '#FE5857',
                 'middle-gray': '#9B9B9B',
                 'text-gray': '#626262',
+                'gray-shade-01': '#5F5F5F',
                 'green-shade-02': '#75C3B466',
                 'green-blue-01': '#97FEF8',
             },

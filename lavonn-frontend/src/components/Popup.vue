@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { moneyFormatter } from '@/helpers'
-import { XMarkIcon } from '@heroicons/vue/24/outline'
+import {
+    XMarkIcon,
+    ShoppingCartIcon,
+    HeartIcon,
+} from '@heroicons/vue/24/outline'
 
 const visible = ref(true)
 const product = ref({
@@ -28,7 +32,7 @@ const quantity = ref(1)
                 class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
             >
                 <div
-                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg lg:min-w-[50vw]"
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg lg:min-w-[40vw]"
                 >
                     <div
                         class="absolute right-2 top-2 rounded-full p-0.5 hover:cursor-pointer hover:bg-red-100"
@@ -64,9 +68,7 @@ const quantity = ref(1)
                                     </h2>
                                 </div>
                                 <div class="my-4 space-y-3">
-                                    <h2
-                                        class="text-lg text-gray-600 2xl:text-xl"
-                                    >
+                                    <h2 class="text-gray-600 2xl:text-lg">
                                         Quantity
                                     </h2>
                                     <div class="flex">
@@ -90,16 +92,24 @@ const quantity = ref(1)
                                             -
                                         </button>
                                     </div>
+                                    <div class="flex space-x-8 pt-4">
+                                        <button
+                                            class="flex items-center justify-center space-x-2 rounded bg-green-shade-01 px-4 py-2 align-middle text-white hover:bg-green-shade-01/85"
+                                        >
+                                            <ShoppingCartIcon class="h-4 w-4" />
+                                            <span>Add to Cart</span>
+                                        </button>
+                                        <div class="flex items-center">
+                                            <button
+                                                class="rounded-full bg-green-shade-01 p-1.5 text-white ring-green-shade-01/40 duration-200 duration-300 hover:cursor-pointer hover:ring-4"
+                                            >
+                                                <HeartIcon class="h-5 w-5" />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div
-                        class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
-                    >
-                        <!--                        Actions if any-->
-                        test-act
                     </div>
                 </div>
             </div>
