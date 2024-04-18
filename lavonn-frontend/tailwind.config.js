@@ -3,6 +3,9 @@ export default {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            fontFamily: {
+                helvetica: ['helvetica', 'sans-serif'],
+            },
             colors: {
                 transparent: 'transparent',
                 offWhite: '#F3EFEF',

@@ -35,7 +35,7 @@ const icons = ref([HeartIcon, ShoppingCartIcon])
         </div>
         <div class="space-y-1">
             <p
-                class="overflow-hidden overflow-ellipsis whitespace-nowrap 2xl:text-sm"
+                class="w-11/12 overflow-hidden overflow-ellipsis whitespace-nowrap 2xl:text-sm"
             >
                 {{ product.name }}
             </p>

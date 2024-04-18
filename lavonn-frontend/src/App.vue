@@ -4,12 +4,14 @@ import NavBar from '@/components/NavBar.vue'
 import Home from '@/views/Home.vue'
 import Test from '@/components/Test.vue'
 import Section from '@/views/Section.vue'
+import SingleViewPage from '@/views/SingleViewPage.vue'
 </script>
 
 <template>
     <TopBar />
     <NavBar />
-    <Home />
-    <!--    <Section />-->
+    <!--    <Home />-->
+    <!--    <SingleViewPage />-->
+    <Section />
     <!--    <Test />-->
 </template>

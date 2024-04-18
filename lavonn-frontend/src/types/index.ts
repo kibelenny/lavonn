@@ -9,4 +9,5 @@ export type Product = {
     price: number
     link: string
     banner?: string
+    discount?: number
 }

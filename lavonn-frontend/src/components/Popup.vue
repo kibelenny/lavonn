@@ -7,7 +7,7 @@ import {
     HeartIcon,
 } from '@heroicons/vue/24/outline'
 
-const visible = ref(true)
+const visible = ref(false)
 const product = ref({
     banner: '15%',
     link: '#',
